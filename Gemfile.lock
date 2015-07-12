@@ -42,6 +42,3 @@ DEPENDENCIES
   sass (= 3.4.1)
   scss_lint (= 0.38.0)
   singularitygs (= 1.6.2)
-
-BUNDLED WITH
-   1.10.2

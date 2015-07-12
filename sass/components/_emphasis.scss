@@ -1,0 +1,10 @@
+.emphasis * {
+	color: $white;
+	@include rem-fallback(font-size,11.4);
+	text-align: center;
+	font-family: $montbold;
+}
+
+[class*="impress-on-emphasis"] {
+	background: $black;
+}

@@ -1,0 +1,27 @@
+default:
+  - 'uglify:build'
+  - 'compass:build'
+  - 'imagemin:build'
+
+build:
+  - 'uglify:build'
+  - 'compass:build'
+  - 'imagemin:build'
+
+prod:
+  - 'uglify:prod'
+  - 'compass:prod'
+  - 'imagemin:build'
+
+performance:
+  - 'devperf'
+
+testjs:
+  - 'jshint'
+
+testsass:
+  - 'scsslint'
+
+testspeed:
+  - 'pagespeed:desktop'
+  - 'pagespeed:mobile'

@@ -1,0 +1,112 @@
+* {
+  @include box-sizing('border-box');
+}
+
+html{
+
+}
+
+body{
+  font-size: $base-font-size+6; /* Set to 16 as default font because 10 just ain't right. */ //Fix for the chrome rem bug http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag
+  line-height: $base-line-height;
+	background: $gray;
+	transition: background-color 1s;
+}
+
+h1, h2, h3, h4, p, ul {
+	@include rem-fallback(margin-bottom, 3);
+	margin-top: 0;
+	line-height: 1.2;
+}
+
+
+h1 {
+	font-family: $montbold;
+	text-transform: uppercase;
+	@include rem-fallback(font-size,12.2);
+	@include rem-fallback(line-height,10.5);
+}
+
+h2 {
+	font-family: $montbold;
+	@include rem-fallback(font-size,11.2);
+}
+
+h3 {
+	font-family: $montultlight;
+	//text-transform: uppercase;
+	@include rem-fallback(font-size,7.4);
+}
+
+h4 {
+	//font-family: $montbold;
+	//@include rem-fallback(font-size,5.3);
+	font-family: $gooddog;
+	@include rem-fallback(font-size,6.3);
+	text-transform: uppercase;
+	@include rem-fallback(padding,3.5);
+	background: $tomato;
+	color: #ffffff;
+}
+
+p, ul {
+	@include rem-fallback(font-size,4.2);
+
+}
+
+ul {
+	margin: 0;
+
+}
+
+li {
+	@include rem-fallback(margin-bottom, 1.5);
+}
+
+blockquote {
+	@include rem-fallback(font-size, 10);
+	line-height: 1.3;
+	font-family: $gooddog;
+	margin: 0;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+	@include rem-fallback(max-height,100);
+	width: auto;
+	float: left;
+	@include rem-fallback(margin-right,7);
+}
+
+
+.drama {
+	font-family: $gooddog;
+}
+
+.subtitle {
+	font-family: $montbold;
+}
+
+.offset {
+	color: $red;
+}
+
+.small {
+	font-size: .6em;
+	line-height: 1;
+}
+.letsmakesomelines:before {
+	content: "";
+	display: block;
+	width: 1580px;
+	height: 1150px;
+	top: 40px;
+	position: absolute;
+	background: $tomato;
+	opacity: 0;
+	transform: rotate(20deg);
+	transition: opacity 2s;
+}
+

@@ -1,0 +1,12 @@
+.about ul {
+	list-style: none;
+	padding: 0;
+}
+
+.about li {
+	line-height: 1;
+	width: 30%;
+	margin-right: 3%;
+	float: left;
+	@include rem-fallback(margin-bottom,4);
+}

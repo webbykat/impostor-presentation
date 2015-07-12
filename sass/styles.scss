@@ -1,0 +1,39 @@
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "base/init";
+// @import "base/mixins"; [Added through init]
+@import "base/colors";
+@import "base/breakpoints";
+@import "base/typography";
+@import "base/normalize";
+@import "base/base";
+@import "base/accesibility";
+@import "base/formalize";
+@import "base/impress";
+
+
+/* Layout rules */
+@import "layouts/layout-base";
+@import "layouts/sidebar-first";
+@import "layouts/sidebar-second";
+@import "layouts/two-sidebars";
+
+/* Component (SMACSS module) rules */
+@import "components/title";
+@import "components/subtitle";
+@import "components/section";
+@import "components/subsection";
+@import "components/subsubsection";
+@import "components/list";
+@import "components/graphic";
+@import "components/quote";
+@import "components/emphasis";
+@import "components/about";
+@import "components/overview";
+
+// Optionally, add your own components here.
+@import "print";
+@import "quick-fixes";
+
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */

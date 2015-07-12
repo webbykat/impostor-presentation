@@ -1,0 +1,139 @@
+//
+// Font faces, stacks and sizes.
+//
+
+@font-face {
+	font-family: 'gooddogregular';
+	src: url('../fonts/GoodDog-webfont.eot');
+	src: url('../fonts/GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/GoodDog-webfont.woff') format('woff'),
+	url('../fonts/GoodDog-webfont.ttf') format('truetype'),
+	url('../fonts/GoodDog-webfont.svg#gooddogregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'montserratextra_bold';
+	src: url('../fonts/montserrat-extrabold-webfont.eot');
+	src: url('../fonts/montserrat-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
+	url('../fonts/montserrat-extrabold-webfont.woff') format('woff'),
+	url('../fonts/montserrat-extrabold-webfont.ttf') format('truetype'),
+	url('../fonts/montserrat-extrabold-webfont.svg#montserratextra_bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'montserratlight';
+	src: url('../fonts/montserrat-light-webfont.eot');
+	src: url('../fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+	url('../fonts/montserrat-light-webfont.woff') format('woff'),
+	url('../fonts/montserrat-light-webfont.ttf') format('truetype'),
+	url('../fonts/montserrat-light-webfont.svg#montserratlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'montserratregular';
+	src: url('../fonts/montserrat-regular-webfont.eot');
+	src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+	url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+	url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
+	url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'montserratultra_light';
+	src: url('../fonts/montserrat-ultralight-webfont.eot');
+	src: url('../fonts/montserrat-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/montserrat-ultralight-webfont.woff2') format('woff2'),
+	url('../fonts/montserrat-ultralight-webfont.woff') format('woff'),
+	url('../fonts/montserrat-ultralight-webfont.ttf') format('truetype'),
+	url('../fonts/montserrat-ultralight-webfont.svg#montserratultra_light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+//Setting base font size as 10 for easy maths
+$base-font-size:   10px; // The font size set on the root html element.
+$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
+$rem-with-px-fallback: "true";
+
+$h1-font-size: 3.2    * $base-font-size;
+$h2-font-size: 2.4  * $base-font-size;
+$h3-font-size: 1.8 * $base-font-size;
+$h4-font-size: 1.6    * $base-font-size;
+$h5-font-size: 1.3 * $base-font-size;
+$h6-font-size: 1 * $base-font-size;
+
+// The following font family declarations are based on the Microsoft core web
+// fonts which are common fonts available on most computer systems. The DejaVu
+// and Nimbus Sans fonts are commonly available on Linux systems where the MS
+// fonts are less common. Tahoma and Helvetica are also widely available.
+//
+// A user's web browser will look at the comma-separated list and will
+// attempt to use each font in turn until it finds one that is available
+// on the user's computer. The final "generic" font (sans-serif, serif or
+// monospace) hints at what type of font to use if the web browser doesn't
+// find any of the fonts in the list.
+
+// First, let's create some font stacks.
+$times-new-roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+$times:           Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+$georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+$verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
+$tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
+$helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$arial:           'montserratlight', Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+$mont: 						'montserratlight', Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$montlight: 			'montserratlight', Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$montultlight: 		'montserratultra_light', Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$montbold: 				'montserratextra_bold', Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$gooddog: 				'gooddogregular', Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+// For an explanation of why "sans-serif" is at the end of this list, see
+// http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
+$courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+
+// Now create some variables for the font stacks we want to use on this site.
+$base-font-family: $montultlight; // The font family set on the html element.
+$font-body:        $verdana;
+$font-monospace:   $courier;
+
+
+
+/**
+ * Titles.
+ */
+.page__title,          /* The title of the page. */
+.node__title,          /* Title of a piece of content when it is given in a list of content. */
+.block__title,         /* Block title. */
+.comments__title,      /* Comment section heading. */
+.comments__form-title, /* Comment form heading. */
+.comment__title {      /* Comment title. */
+  margin: 0;
+}

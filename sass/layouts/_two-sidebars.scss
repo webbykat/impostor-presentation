@@ -1,0 +1,62 @@
+/**
+ * The layout when there are two sidebars.
+ */
+
+/**
+ * Use 3 grid columns for smaller screens.
+ */
+
+@include breakpoint($tablet) {
+
+  @include add-grid(3);
+  @include add-gutter(1/3);
+
+  .two-sidebars {
+    /* Span 2 columns, starting in 2nd column from left. */
+    #content {
+      @include grid-span(2, 2);
+    }
+
+    /* Span 1 column, starting in 1st column from left. */
+    .region-sidebar-first {
+      @include grid-span(1, 1);
+    }
+
+    /* Start a new row and span all 3 columns. */
+    .region-sidebar-second {
+      @include grid-span(3, 1);
+      clear: both;
+
+
+    }
+  }
+
+}
+
+
+/**
+ * Use 5 grid columns for larger screens.
+ */
+@include breakpoint($desktop) {
+
+  @include add-grid(5);
+  @include add-gutter(1/3);
+
+  .two-sidebars {
+    /* Span 3 columns, starting in 2nd column from left. */
+    #content {
+      @include grid-span(3, 2);
+    }
+
+    /* Span 1 column, starting in 1st column from left. */
+    .region-sidebar-first {
+      @include grid-span(1, 1);
+    }
+
+    /* Span 1 column, starting in 5th column from left. */
+    .region-sidebar-second {
+      @include grid-span(1, 5);
+    }
+  }
+
+}

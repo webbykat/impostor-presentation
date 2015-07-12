@@ -1,0 +1,131 @@
+// @file
+// Custom sass mixins
+//
+// Define the custom mixins for your project here.
+// http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#defining_a_mixin
+
+// Makes an element visually hidden, but accessible.
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+// Makes an element visually hidden by default, but visible when focused.
+@mixin element-focusable {
+  @include element-invisible;
+
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+
+//Rem Fallback
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@mixin rem-fallback($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value*strip-unit($base-font-size)}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  }
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+
+  #{$property}: $pxValues;
+  #{$property}: $remValues;
+}
+
+
+/*
+ * Retina Sprites for Compass
+ * by:              Andreas Sahle
+ * forked from:     Retina-Sprites-for-Compass by Gaya Kessler
+ * @see: https://github.com/Gaya/Retina-Sprites-for-Compass
+ * last update:     04/13/14
+ *
+ * NOTE: This is a fork of the fork.
+ *
+ * Usage:
+ * 1. create a folder in your image directory (in this case 'sprite-images').
+ * 2. create sprite images for pixel ratio 1 screens and put them in the folder.
+ * 4. create sprite images for pixel ratio 2 screens and put them in the folder,
+ *    use the same filenames with a '-2x' suffix.
+ * 5. use the sprite-image in your Sass/Scss using: '@include use-sprite(<sprite-name>)'
+ */
+
+//first we'll define the folder where the sprites are and their layout
+$sprite-images: sprite-map("sprite-images/*.png", $layout: vertical, $spacing: 10px) !default;
+$sprite-high-res-suffix: '-2x' !default;
+
+
+//Sprite mixin, works perfectly with standard defines
+@mixin use-sprite($sprite, $sprite-retina: true, $sprite-map: $sprite-images) {
+  $sprite-high-res: #{$sprite}#{$sprite-high-res-suffix};
+  background-image: sprite-url($sprite-map);
+  background-position: sprite-position($sprite-map, $sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: image-height(sprite-file($sprite-map, $sprite));
+  width: image-width(sprite-file($sprite-map, $sprite));
+
+  @if $sprite-retina {
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+      background-size: (image-width(sprite-path($sprite-map)) / 2) (image-height(sprite-path($sprite-map)) / 2);
+      background-position: nth(sprite-position($sprite-map, $sprite-high-res), 1)/2 nth(sprite-position($sprite-map, $sprite-high-res), 2)/2;
+      height: image-height(sprite-file($sprite-map, $sprite));
+      width: image-width(sprite-file($sprite-map, $sprite));
+    }
+  }
+
+}
+
+//Simplified version of use-sprite mixin specifically for IE8 (IE8 breaks when there is both a pixel density and screen size media query)
+@mixin use-sprite-ie8($sprite, $sprite-retina: false, $sprite-map: $sprite-images) {
+  $sprite-high-res: #{$sprite}#{$sprite-high-res-suffix};
+  background-image: sprite-url($sprite-map);
+  background-position: sprite-position($sprite-map, $sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: image-height(sprite-file($sprite-map, $sprite));
+  width: image-width(sprite-file($sprite-map, $sprite));
+}
+
+//Preferred version of clearfix
+@mixin clearfix(){
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

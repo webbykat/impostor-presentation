@@ -8,19 +8,37 @@
     <title>Conquering Impostor Syndrome</title>
     
     <meta name="description" content="Conquering Imposter Syndrome" />
-    <meta name="author" content="Chief" />
+    <meta name="author" content="Sarah, Kat, and Heather" />
 
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/impressConsole.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
     <style type="text/css">
       /* Temp working styles */
-      .step { display: none; }
+/*      .step { display: none; }
       .step.present {
         display: block;
+      }*/
+      /* fade out inactive slides */
+      .step:not(.active) { opacity: 0.3; }
+      .step.hide:not(.active) { opacity: 0; }
+
+      /* Hide other slides for these */
+      .impress-on-title .step:not(.active),
+      .impress-on-about .step:not(.active),
+      [class*="impress-on-section"] .step:not(.active),
+      [class*="impress-on-emphasis"] .step:not(.active) {
+        display: none;
       }
+
+      /* Hide notes */
+      .step .notes {
+        display: none;
+      }
+
     </style>
 </head>
 
@@ -329,8 +347,11 @@
 
 
 <script src="js/impress.js"></script>
-<script>impress().init();</script>
-
+<script src="js/impressConsole.js"></script>
+<script>
+  impress().init();
+  console().init();
+</script>
 
 
 </body>

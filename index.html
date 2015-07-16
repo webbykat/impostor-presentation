@@ -23,8 +23,12 @@
         display: block;
       }*/
       /* fade out inactive slides */
-      .step:not(.active) { opacity: 0.3; }
+      .step:not(.active) { opacity: 0.03; }
       .step.hide:not(.active) { opacity: 0; }
+
+      .impress-on-overview .step {
+        opacity: 1;
+      }
 
       /* Hide other slides for these */
       .impress-on-title .step:not(.active),
@@ -37,6 +41,13 @@
       /* Hide notes */
       .step .notes {
         display: none;
+      }
+
+      .step.list h3 {
+        font-family: "gooddogregular", Georgia, "Times New Roman", "DejaVu Serif", serif;
+        font-size: 63px;
+        font-size: 6.3rem;
+        text-transform: uppercase;
       }
 
     </style>
@@ -55,7 +66,7 @@
 
 <div id="impress">
 
-  <div id="title" class="title step" data-x="0" data-y="0" data-scale="1">
+  <div id="title" class="title step" data-x="0" data-y="-200" data-scale="2">
     <h1>Conquering<br><span class="drama">Impostor</span><br>Syndrome</h1>
     <p class="subtitle">Thriving in the Open Source Community</p>
   </div>
@@ -65,78 +76,73 @@
     <ul>
       <li>Heather Rodriguez<br><span class="offset small">Engineer at Civic Actions</span></li>
       <li>Kat Kuhl<br><span class="offset small">Director of Technology at CHIEF</span></li>
-      <li>Sarah Thrasher<br><span class="offset small">Senior Front-end Developer at Acquia</span></li>
+      <li>Sarah Thrasher<br><span class="offset small">Senior Front-end Dev at Acquia</span></li>
     </ul>
   </div>
 
   <!-- Intro (Heather) -->
 
-  <div id="graphic_i-have-no-idea" class="graphic step" data-x="5000" data-y="1000" data-scale="1">
+  <div id="graphic_i-have-no-idea" class="graphic step hide" data-x="-1000" data-y="1000" data-scale="1">
     <img src="images/src/beardedlady.jpg" alt="image"/>
-    <h2>What is impostor syndrome?</h2>
+    <h3>What is impostor syndrome?</h3>
   </div>
 
-  <div id="subsection_who-does-it-affect" class="subsection list step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="subsection_who-does-it-affect" class="subsection list step" data-x="-1000" data-y="2000" data-z="1500" data-scale="1">
     <h3>Who does it affect?</h3>
     <ul>
       <li>women</li>
       <li>minorities</li>
       <li>LGBT</li>
-      <li>people of lower socioeconomic classes</li>
+      <li>people of lower socioeconomic background</li>
       <li>...anyone</li>
     </ul>
   </div>
 
-  <div id="why-is-it-a-problem" class="step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="why-is-it-a-problem" class="step" data-x="-1000" data-y="2000" data-z="100" data-scale="1">
   <h2>So, why is impostor syndrome a problem?</h2>
-  [IMAGE HERE]
   </div>
 
-  <div id="its-a-trap" class="step" data-x="2000" data-y="1000" data-scale="1">
-  [ITS A TRAP]
-  </div>
+  <div id="its-a-trap" class="step hide" data-x="-1000" data-y="2000"  data-z="-1500" data-scale="1">
+    <img src="images/src/its-a-trap-cat.gif" alt="image"/>
+  </div> 
 
 
   <!-- Give yourself permission to make mistakes (Sarah) -->
-  <div id="section_make-mistakes" class="section step" data-x="2000" data-y="1000" data-scale="1">
+   <div id="section_make-mistakes" class="section step" data-x="-2000" data-y="1000" data-scale="1">
     <h2>Give yourself permission to make mistakes.</h2>
   </div>
 
-  <div id="ship-it" class="step" data-x="2000" data-y="1000" data-scale="1">
-    [SHIP IT]
+  <div id="ship-it" class="step hide" data-x="-2000" data-y="1000" data-scale="1">
+    <img src="images/src/ship-it.jpeg" alt="image"/>
   </div>
 
-  <div id="subsection_how-to-make-mistakes" class="subsection list step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="subsection_how-to-make-mistakes" class="subsection list step hide" data-x="-2000" data-y="1000" data-scale="1">
     <h3>Pro Tips</h3>
     <ul>
-      <li>  Get practice in low-risk situations.</li>
-      <li>  Put together session proposals for local events.</li>
-      <li>  Put your code on github (or drupal.org).</li>
-      <li>  Take on freelance or side projects.</li>
-      <li>  Work with your employer to develop a career path.</li>
+      <li>Get practice in low-risk situations.</li>
+      <li>Put together session proposals for local events.</li>
+      <li>Put your code on github (or drupal.org).</li>
+      <li>Take on freelance or side projects.</li>
     </ul>
   </div>
 
+
   <!-- Get active in the community (Heather) -->
-  <div id="section_get-active" class="section step" data-x="2000" data-y="1000" data-scale="1">
+   
+  <div id="section_get-active" class="section step" data-x="-1000" data-y="-1000" data-scale="1">
     <h2>Get active in the community.</h2>
   </div>
 
-  <div id="support-network" class="subheader step" data-x="2000" data-y="1000" data-scale="1">
-    <h2>Build a support network<br />
+  <div id="support-network" class="subheader step hide" data-x="-1000" data-y="-1000" data-scale="1">
+    <h2><span class="offset">Build a support network</span><br />
     (& get feedback).</h2>
   </div>
 
-  <div id="trollface" class="step" data-x="2000" data-y="1000" data-scale="1">
-    [TROLL FACE]
+  <div id="trollface" class="step hide" data-x="-1000" data-y="-1000"  data-scale="1">
+    <img src="images/src/trollface.png" alt="image"/>
   </div>
 
-  <div id="xkdc-385" class="step" data-x="2000" data-y="1000" data-scale="1">
-    [image here]
-    <p class="source">https://xkcd.com/385/</p>
-  </div>
-
-  <div id="subsection_how-to-get-active" class="subsection list step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="subsection_how-to-get-active" class="subsection list step hide" data-x="-1000" data-y="-1000"  data-scale="1">
     <h3>Pro Tips</h3>
     <ul>
     <li>Find people you can reach out to when you need help.</li>
@@ -145,35 +151,34 @@
     </ul>
   </div>
 
-
   <!-- Contribute to documentation (Kat) -->
-  <div id="contribute-to-docs" class="subheader step" data-x="2000" data-y="1000" data-scale="1">
+<!--   <div id="contribute-to-docs" class="subheader step" data-x="400" data-y="-1000" data-scale="1">
     <h2>Contribute to documentation.</h2>
-  </div>
+  </div> 
 
-  <div id="dev-documentation-1" class="step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="dev-documentation-1" class="step" data-x="400" data-y="-1000" data-scale="1">
     <h4>If the module developer writes documentation, it's probably going to end up something like this:</h4>
   </div>
 
-  <div id="dev-documentation-2" class="step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="dev-documentation-2" class="step" data-x="400" data-y="-1000" data-scale="1">
     <p>This means that given a field instance of field_reference1, if you add a reference to NodeBeta to NodeAlpha's field_reference1 and NodeBeta has an instance of field_reference1, then NodeAlpha will be added to NodeBeta's instance of field_reference1.</p>
     <p class="source">http://bit.ly/lullabot-document-to-understanding</p>
   </div>
 
-  <div id="user-documentation-1" class="step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="user-documentation-1" class="step" data-x="400" data-y="-1000" data-scale="1">
     <h4>If you write documentation, it's probably going to end up something more like this:</h4>
   </div>
 
-  <div id="user-documentation-2" class="step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="user-documentation-2" class="step" data-x="400" data-y="-1000" data-scale="1">
     <p>For example, let's say you have two content types: Attendee and Event... When you click on an Event node, you'll see a list of the Attendee nodes that it references... Clicking on an Attendee node will show you the Events they are attending.</p>
     <p class="source">http://bit.ly/lullabot-document-to-understanding</p>
   </div>
 
-  <div id="busted-documentation" class="step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="busted-documentation" class="step" data-x="400" data-y="-1000" data-scale="1">
     [image here]
   </div>
 
-  <div id="subsection_documentation-protips" class="subsection list step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="subsection_documentation-protips" class="subsection list step" data-x="400" data-y="-1000" data-scale="1">
     <h3>Pro Tips</h3>
     <ul>
       <li>Start with bit.ly/lullabot-document-to-understanding for ideas on contributing to documentation.</li>
@@ -182,18 +187,18 @@
     </ul>
   </div>
 
-  <div id="xkdc-979" class="step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="xkdc-979" class="step" data-x="400" data-y="-1000" data-scale="1">
     [image here]
     <p class="source">https://xkcd.com/979/</p>
-  </div>
+  </div> -->
 
 
   <!-- Be a mentor (Sarah) -->
-  <div id="be-a-mentor" class="subheader step" data-x="2000" data-y="1000" data-scale="1">
+   <div id="be-a-mentor" class="subheader step" data-x="-1700" data-y="0" data-scale="1">
     <h2>Be a mentor.</h2>
   </div>
 
-  <div id="subsection_what-do-mentors-do" class="subsection list step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="subsection_what-do-mentors-do" class="subsection list step hide" data-x="-1700" data-y="0" data-scale="1">
     <h3>What do mentors do?</h3>
   <ul>
     <li>Review code/development with individuals one-on-one.</li>
@@ -203,20 +208,21 @@
   </ul>
   </div>
 
-  <div id="subsection_mentoring" class="subsection step" data-x="2000" data-y="1000" data-scale="1">
-    [image here]
+  <div id="subsection_mentoring" class="subsection step hide" data-x="-1700" data-y="0" data-scale="1">
+    <img src="images/src/karate-kid.jpg" alt="image"/>
   </div>
 
-  <div id="think-again" class="step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="think-again" class="step" data-x="-200" data-y="1000" data-scale="1">
     <h3>Don’t think you’re capable of being a mentor? Think again.</h3>
   </div>
 
+
   <!-- Speak! (Heather) -->
-  <div id="speak" class="subheader step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="speak" class="subheader step" data-x="-1800" data-y="-400" data-scale="1">
     <h2>Speak.</h2>
   </div>
 
-  <div id="subsection_community-benefits" class="subsection list step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="subsection_community-benefits" class="subsection list step hide" data-x="-2000" data-y="200" data-scale="1">
     <h3>Community Benefits</h3>
     <ul>
       <li>Helps disseminate knowledge </li>
@@ -224,7 +230,7 @@
     </ul>
   </div>
 
-  <div id="subsection_personal-benefits" class="subsection list step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="subsection_personal-benefits" class="subsection list step hide" data-x="-2000" data-y="200" data-scale="1">
     <h3>Personal Benefits</h3>
     <ul>
       <li>Helps you understand your material better.</li>
@@ -236,16 +242,16 @@
 
   <!-- Own your career (Kat) -->
 
-  <div id="section_ownit" class="section step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="section_ownit" class="section step" data-x="2000" data-y="-1100" data-scale="1">
     <h2>Own your career.</h2>
   </div>
 
-  <div id="takecredit" class="subheader step" data-x="3000" data-y="1000" data-scale="1" data-rotate-z="90">
+  <div id="takecredit" class="subheader step hide" data-x="2000" data-y="-1100" data-scale="1" data-rotate-z="90" data-z="100">
     <h2><span class="offset">Take credit for accomplishments</span><br>
       (& keep a record of them).</h2>
   </div>
 
-  <div id="subsection_dont-say" class="subsection list step" data-x="3000" data-y="1000" data-scale="1" data-rotate-z="90">
+  <div id="subsection_dont-say" class="subsection list step hide" data-x="2000" data-y="-1100" data-scale="1" data-rotate-z="90" data-z="200">
     <h3>Don’t say:</h3>
     <ul>
       <li>"I just Googled it."</li>
@@ -260,17 +266,17 @@
 
   </div>
 
-  <div id="decide-what-you-want" class="subheader step" data-x="3000" data-y="3000" data-scale="1" data-rotate-z="90">
+  <div id="decide-what-you-want" class="subheader step" data-x="1000" data-y="0" data-scale="1" data-rotate-z="90" data-z="0">
     <h2>Decide what you want,<br>
       and ask for it.</h2>
   </div>
 
-  <div id="decide-what-you-want" class="step" data-x="3000" data-y="3000" data-scale="1" data-rotate-z="90">
+  <div id="move-up" class="step"  data-x="1000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1">
     <h3>If you want to move up at your current job...</h3>
   </div>
 
-  <div id="subsection_communicate" class="subsection list step" data-x="3000" data-y="3000" data-scale="1" data-rotate-z="90">
-  <h4>Pro Tips</h4>
+  <div id="subsection_communicate" class="subsection list step" data-x="1000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1">
+  <h3>Pro Tips</h3>
   <ul>
     <li>Communicate with your boss about the skills you want to grow.</li>
     <li>Know the responsibilities (and job description) of the role above yours.</li>
@@ -278,21 +284,21 @@
   </ul>  
   </div>
 
-  <div id="dont-over-work-yourself" class="step" data-x="4000" data-y="1000" data-scale="1">
+  <div id="dont-over-work-yourself" class="step" data-x="1000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1" >
     <h4>But don't overwork yourself.</h4>
   </div>
 
-  <div id="decide-what-you-want" class="step" data-x="3000" data-y="3000" data-scale="1" data-rotate-z="90">
+  <div id="another-job" class="step" data-x="1000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1" >
     <h3>If you want another job...</h3>
   </div>
 
-  <div id="quote_round-up" class="quote step" data-x="2000" data-y="1000" data-scale="1">
+  <div id="quote_round-up" class="quote step" data-x="1000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1" >
     <blockquote>“Here’s where I think women get it wrong:
     we are perpetually rounding down, where, by all rules of mathematics, we should be rounding up. And that slight miscalculation has huge repercussions in our professional lives.”</blockquote>
     <p>https://hbr.org/2012/01/confidence-is-a-numbers-game/</p>
   </div>
 
-  <div id="subsection_qualifications" class="subsection list step" data-x="4000" data-y="2000" data-scale="1">
+  <div id="subsection_qualifications" class="subsection list step" data-x="1000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1">
     <p>Hewlett Packard statistics:</p>
     <ul>
       <li>Women wouldn't apply for a job unless they feel they meet 100% of the qualifications.</li>
@@ -300,11 +306,11 @@
     </ul>
   </div>
 
-  <div id="obligations" class="subsection step" data-x="4000" data-y="2000" data-scale="1">
+  <div id="obligations" class="subsection step" data-x="1000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1" >
     <p>Remember: You do not have a moral obligation to tell prospective employers about the limits of your knowledge.</p>
   </div>
 
-  <div id="demonstrate" class="subsection step" data-x="4000" data-y="2000" data-scale="1">
+  <div id="demonstrate" class="subsection step" data-x="1000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1" >
     <h4>Spend your time demonstrating what you know, not disclaiming what you don't.</h4>
   </div>
 
@@ -321,7 +327,7 @@
 
   <!-- Demo content slides -->
 
-  <div id="graphic_name" class="graphic step" data-x="5000" data-y="1000" data-scale="1">
+<!--   <div id="graphic_name" class="graphic step" data-x="5000" data-y="1000" data-scale="1">
     <img src="images/src/beardedlady.jpg" alt="image"/>
     <h3>Graphic</h3>
     <p class="subtitle">Here's a subtitle</p>
@@ -335,7 +341,7 @@
 
   <div id="emphasis_slidename" class="emphasis step" data-x="4000" data-y="-1000" data-scale="1">
     <p>Here's a slide with emphasis</p>
-  </div>
+  </div> -->
 
 
 </div>

@@ -64,9 +64,8 @@ li {
 }
 
 blockquote {
-	@include rem-fallback(font-size, 10);
+	@include rem-fallback(font-size, 5.3);
 	line-height: 1.3;
-	font-family: $gooddog;
 	margin: 0;
 }
 

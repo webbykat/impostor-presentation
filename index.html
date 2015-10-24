@@ -79,7 +79,7 @@
 <div id="impress">
 
   <div id="title" class="title step" data-x="0" data-y="-200" data-scale="2">
-    <h1>Conquering<br><span class="drama">Impostor</span><br>Syndrome<br> in the Open Source Community</h2>
+    <h1>Conquering<br><span class="drama">Impostor</span><br>Syndrome<br> <span class="overview-hidden">in the Open Source Community</span></h2>
     <div class="notes">
       <ul>
         <li> What it is</li>
@@ -90,13 +90,13 @@
 
   <div id="about" class="about step" data-x="1500" data-y="1000" data-scale="2">
     <h2>About Us</h2>
-    <ul>
+    <ul style="margin-top:1.5em;">
       <li>
         Heather Rodriguez<br>
-        <span class="offset small">Engineer at Civic Actions</span><br>
+        <span class="offset small">Engineer at CivicActions</span><br>
         <a href="http://twitter.com/hrodrig" class="small twitter">@hrodrig</a>
         </li>
-      <li>Kat Kuhl<br>
+      <li style="margin-left:3em">Kat Kuhl<br>
       <span class="offset small">Director of Technology at CHIEF</span><br>
       <a href="http://twitter.com/webbykat" class="small twitter">@webbykat</a>
       </li>
@@ -177,19 +177,17 @@
     <img src="images/build/kitten-racoon-replace.jpg" alt="Cat using a mask to look like a racoon"/>
     <div class="notes">
       <ul>
-        <li>If you have this feeling of not belonging, in your job or in your community, it can be hard to put yourself out there and take risks.</li>
-        <li>Asking a question you should know the answer to will out you to everybody!</li>
-        <li>Be conscious of this tendency. When someone says a term or acronym you don't know, ask them, instead of just googling it later. You might not be the only person who didn't know.</li>
-        <li>Accept that you don't have to be the expert on every topic. Nobody is!</li>
-        <li>One of the best things that you can do for yourself is to become comfortable saying "I don't know". It actually makes you look more confident doing this, especially next to people who try to make things up rather than admit they don't know something.</li>
+        <li>When you feel like an impostor, the last thing you want the people around you to do is to figure you out. So, like this adorable kitten, you may put time into making sure you don't look or sound different so they don't get wise and attack you.</li>
+        <li>Let's say that you feel like a fraud already, and you hear something you don't know. You might not want to ask -- you think everyone around you already knows the answer.</li>
+        <li>Let's say you're comfortable with your own expertise, and you hear something you don't know. You ask people to define it. No one stones you.</li>
       </ul>
 
     </div>
 
   </div>
 
-  <div id="ship-it" class="step hide meme" data-x="-2000" data-y="2500" data-rotate-z="-90" data-rotate-y="90" data-scale="1">
-    <img src="images/build/ship-it.jpeg" alt="Meme of squirrel wih 'U shipz it now!' text"/>
+  <div id="learning" class="step hide single" data-x="-2000" data-y="2500" data-rotate-z="-90" data-rotate-y="90" data-scale="1">
+    <p>You learn faster when you admit what you don't know.</p>
 
     <div class="notes">
       <ul>
@@ -203,7 +201,22 @@
     </div>
   </div>
 
-  <div id="quote_how-to-make-mistakes" class="quote step hide" data-x="-500" data-y="-1800" data-rotate-z="-90" data-rotate-y="90" data-scale="1">
+  <div id="risks" class="step hide single" data-x="-2000" data-y="4500" data-rotate-z="-90" data-rotate-y="90" data-scale="1">
+    <p>You learn faster when you take risks.</p>
+
+    <div class="notes">
+      <ul>
+        <li>Putting code up for review, or out into the wild on github, bitbucket, or D.O. is annother thing that can cause you stress if you feel like an impostor.</li>
+        <li>Being on a team that does code reviews well has alieviated a lot of that for me. Collaborative code reviews give you insight into how other people do things, and how a piece of code evolves as we hammer away at a problem.</li>
+        <li>Alicia Liu, an engineer who has blogged and spoken about impostor syndrome says "Programming is basically failing over and over again until it works, and that makes it hard to build confidence."</li>
+        <li>The best thing you can do here is to realize this. It's not just you and you can battle through it. It will get easier the more you do it.</li>
+        <li>Just ship it! What I mean by this isn't put out broken or half working code, but don't stress over perfecting everything. Focus on minimum viable product, and get something out that you and others can iterate on.</li>
+      </ul>
+
+    </div>
+  </div>  
+
+  <div id="quote_how-to-make-mistakes" class="quote step hide" data-x="-2000" data-y="6500" data-rotate-z="-90" data-rotate-y="90" data-scale="1">
     <blockquote>
     If you aren't making mistakes, it means you aren't out there doing anything.
     </blockquote>
@@ -232,9 +245,7 @@
     <h2>Get active in the community.</h2>
     <div class="notes">
       <ul>
-        <li>Attending and speaking at local camps and cons, contributing documentation and patches, and  creating our own micro communities, has helped us to feel established and valued among our peers. </li>
         <li>By getting out into the community and talking to people of varying skill sets and ranks, you can get a better sense of where you fit in and more likely than not, you’ll realize you know more than you think you do.</li>
-        <li>More concrete evidence of your achievements that you can point to, whether it’s speaking or contributing code or organizing events, can help reaffirm your sense of accomplishment. </li>
       </ul>
     </div>
   </div>
@@ -245,6 +256,7 @@
       <ul>
         <li>Drupal Users Group at the University of Maryland. Discussed, presented and conduct demos and trainings to help disseminate knowledge within our group and also to provide support for one another. Not only did I learn so much from my group members and was continually inspired to learn more, as a I leader I had to recognize that I was being perceived as an authority on Drupal, a position which I eventually had to own.</li>
         <li>Being able to talk openly about your fears and anxieties in a safe space where you feel comfortable sharing is key to helping you get over impostor syndrome. Realizing that not everybody has it all figured out-- not even people you perceive as the “experts”, who are so much better than you-- helps you recognize that you don’t have to suffer in a vacuum. It may be helpful for you to start attending local meetups to identify supportive networks of individuals.</li> 
+        <li>Kat: If you're self-taught, it's easy to think that everyone else must be better than you. Once you start meeting others in the community, you might go into it thinking that everyone knows more than you do -- but you're going to realize that you know a lot more than you thought.</li>
       </ul>
   </div>
 
@@ -306,7 +318,9 @@
     <h2>Be a mentor.</h2>
     <div class="notes">
       <ul>
-        <li>Heather talks about the importance of mentors. Kat talks about why you should be one. Anecdote from Sarah's bit about women all wanting mentors.</li>
+        <li><a href="http://www.psmag.com/business-economics/qualified-job-wait-probably-imposter-syndrome-psychology-68700">Source: Pacific Standard</a></li>
+        <li>Katherine Anderson, who works in finance in New York, learned about a new mentoring program for women who work in venture capital and private equity. As a mid-level manager who’d struggled to find good mentorship, she was thrilled. “I said how much I'd like to participate,” Anderson told me, “preferably on the mentee side of the program since I don't think there is much I can offer to someone else.”</li>
+        <li>The program organizer laughed and told her that she’d just had a high-level managing director at a private equity firm say the exact same thing. None of the women who’d signed up to attend—regardless of their title—thought they were experienced enough to be mentors. “It's sort of surprising to me that even when you get to the top, you still don't realize you've made it there.”</li>
       </ul>
     </div>
   </div>
@@ -322,7 +336,7 @@
   </div>
 
   <div id="subsection_mentoring" class="subsection step hide meme" data-x="-1700" data-y="0" data-scale="1">
-    <img src="images/build/karate-kid.jpg" alt="Karate kid and Mr. Miyagi"/>
+    <img src="images/mentor-cat.jpg" alt="Please oh please let me be a mentor"/>
   </div>
 
 
@@ -331,9 +345,10 @@
     <h2>Speak.</h2>
     <div class="notes">
       <ul>
-        <li>You might be afraid to submit your session proposal because you don’t think you’re qualified to speak on a topic, but you’re doing yourself and the community a disservice by keeping the valuable knowledge you’ve attained from being shared.</li>
-        <li>There are many benefits to public speaking, both personal and professional.Not only does it help you understand your material better, it also gives you greater recognition in the community and workplace, which can help you either make a case for a promotion or find a better job. </li>
-        <li>Also, you benefit the open source community by adding your own unique voice and increasing the diversity of its talent pool. The open source community needs you to thrive, too!</li>
+        <li>As you get more comfortable sharing your knowledge with others, you may realize you want to do it on a bigger scale.</li>
+        <li>This is scary, but you have lots of opportunities for feedback before you get on stage - on your topic, on your session proposal, on your talk.</li>
+        <li>You also need to realize that other people might see your talk and see themselves in you - and realize they can do this, too. We need more women speaking!</li>
+        <li>webchick anecdote</li>
       </ul>
     </div>
   </div>
@@ -363,20 +378,28 @@
   </div>
 
     <div id="decide-what-you-want" class="subheader step" data-x="1000" data-y="-200" data-scale="1" data-rotate-z="90" data-z="0">
-    <h2>Decide what you want,<br>
-      and ask for it.</h2>
+    <h2 style="font-size:2em">Decide what you want;<br />
+    then do your research.</h2>
   </div>
 
-  <div id="move-up" class="step"  data-x="1000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1">
+  <div id="move-up" class="step" data-x="1000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1">
     <h4>If you want to move up at your current job...</h4>
   </div>
 
-  <div id="takecredit" class="single step hide" data-x="2000" data-y="-1100" data-scale="1" data-rotate-z="90" data-z="100">
+  <div id="subsection_communicate" class="single step hide" data-x="3000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1">
+    <p>Tell your boss what skills you want to grow.</p>
+  </div>
+
+  <div id="subsection_know" class="subsection list step single" data-x="5000" data-y="-3500" data-rotate-x="90" data-z="400" data-scale="1">
+    <p>Learn the responsibilities (& job description)<br />of the role you want.</p>
+  </div>
+
+  <div id="takecredit" class="single step hide" data-x="7000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1">
     <p>Keep a record of your accomplishments<br />
       <span class="offset">(& take credit for them)</span>.</p>
   </div>
 
-  <div id="subsection_dont-say" class="subsection list step hide" data-x="2000" data-y="-1100" data-scale="1" data-rotate-z="90" data-z="200">
+  <div id="subsection_dont-say" class="subsection list step hide" data-x="7000" data-y="-0" data-scale="1" data-rotate-z="90">
     <h3>Don’t say:</h3>
     <ul>
       <li>"I just Googled it."</li>
@@ -385,7 +408,7 @@
     </ul>
   </div>
 
-  <div id="subsection_say-instead" class="subsection list step hide" data-x="2000" data-y="-1100" data-rotate-x="-90" data-scale="1" data-rotate-z="90" data-z="200">
+  <div id="subsection_say-instead" class="subsection list step hide" data-x="7000" data-y="0" data-rotate-x="-90" data-scale="1" data-rotate-z="90" data-z="200">
 
     <h3>Say instead:</h3>
     <ul>
@@ -394,47 +417,41 @@
 
   </div>
 
-  <div id="subsection_communicate" class="subsection list single step" data-x="-1000" data-y="-2500" data-rotate-x="90" data-z="400" data-scale="1">
-    <p>Communicate with your boss about the skills<br />you want to grow.</p>
-  </div>
-
+  <!--
   <div id="subsection_know" class="subsection list step single" data-x="1000" data-y="-3500" data-rotate-x="90" data-z="400" data-scale="1">
     <p>Learn the responsibilities (& job description)<br />of the role you want.</p>
   </div>
 
-  <div id="subsection_build" class="subsection list step single" data-x="1000" data-y="-5500" data-rotate-x="90" data-z="400" data-scale="1">
-    <p>Build a case for advancement based<br />on your work.</p>
-  </div>
-
   <div id="dont-over-work-yourself" class="step single" data-x="1000" data-y="2500" data-rotate-x="90" data-z="400" data-rotate-z="90" data-scale="1" >
-    <p>But don't believe that you have<br />to overwork yourself.</p>
-  </div>
+    <p>But don't work yourself into burnout.</p>
+  </div>-->
 
   <div id="another-job" class="step" data-x="1500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1" >
     <h4>If you want a new job...</h4>
   </div>
 
-  <div id="quote_round-up" class="quote step hide" data-x="2500" data-y="2500" data-rotate-x="90" data-z="400" data-rotate-z="70" data-scale="1" >
-    <blockquote>
-    <b>"Here’s where I think women get it wrong: we are perpetually rounding down, where, by all rules of mathematics, we should be rounding up.</b> And that slight miscalculation has huge repercussions in our professional lives."
-    </blockquote>
-    <p class="source"><a href="https://hbr.org/2012/01/confidence-is-a-numbers-game/">Confidence is a Numbers Game, Jodi Glickman</a></p>
+  <div id="network" class="step subsection" data-x="3500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1">
+    <h2 style="font-size:1.5em">Tap your network.</h2>
   </div>
 
-  <div id="subsection_qualifications" class="subsection list step hide" data-x="3500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1">
+  <div id="apply" class="step subsection" data-x="5500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1">
+    <h2 style="font-size:1.5em">Don't hesitate to apply<br />for what you want.</h2>
+  </div>
+
+  <div id="subsection_qualifications" class="subsection list step hide" data-x="7500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1">
     <h3>Hewlett Packard report:</h3>
     <ul>
       <li>Women wouldn't apply for a job unless they felt they meet 100% of the qualifications.</li>
       <li>Men applied if they felt  they meet as little as 60% of them.</li>
-    </ul>
+    </ul>    
   </div>
 
-  <div id="obligations" class="subsection list step" data-x="4500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1" >
-    <h3>You do not have an obligation to explain<br />what you <span class="offset">don't</span> know in an interview.</h3>
+  <div id="obligations" class="subsection step" data-x="9500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1" >
+    <h2 style="font-size:1.5em;">Don't spend your time explaining<br />what you <span class="offset">don't</span> know in an interview.</h2>
     <p>(Other people aren't.)</p>
   </div>
 
-  <div id="demonstrate" class="subsection step list" data-x="5500" data-y="3500" data-rotate-x="90" data-z="400" data-rotate-z"50" data-scale="1" >
+  <div id="demonstrate" class="subsection step list" data-x="11500" data-y="9500" data-rotate-x="90" data-z="400" data-rotate-z"50" data-scale="1" >
     <h4>Know why you're a great hire.<br />Then tell that story at your interview.</h4>
   </div>
 

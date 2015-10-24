@@ -646,8 +646,8 @@ h2 {
 /* line 35, ../sass/base/_base.scss */
 h3 {
   font-family: "montserratultra_light", Arial, Helvetica, "Nimbus Sans L", sans-serif;
-  font-size: 76px;
-  font-size: 7.6rem;
+  font-size: 74px;
+  font-size: 7.4rem;
 }
 
 /* line 41, ../sass/base/_base.scss */
@@ -1515,6 +1515,10 @@ optgroup::-moz-focus-inner {
 /* line 10, ../sass/components/_overview.scss */
 [class*="impress-on-overview"] .step.section {
   color: #C5321C;
+}
+/* line 14, ../sass/components/_overview.scss */
+[class*="impress-on-overview"] .overview-hidden {
+  display: none;
 }
 
 /**

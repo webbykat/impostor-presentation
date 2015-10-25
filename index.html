@@ -1,1 +1,301 @@
-My Page
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Conquering Impostor Syndrome</title>
+    
+    <meta name="description" content="Conquering Imposter Syndrome" />
+    <meta name="author" content="Sarah, Kat, and Heather" />
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/impressConsole.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <style type="text/css">
+      /* Temp working styles */
+/*      .step { display: none; }
+      .step.present {
+        display: block;
+      }*/
+      /* fade out inactive slides */
+      .step:not(.active) { opacity: 0.03; }
+      .step.hide:not(.active) { opacity: 0; }
+
+
+       .impress-on-overview .step {
+         opacity: 1;
+       }
+
+      /* Hide other slides for these */
+      .impress-on-title .step:not(.active),
+      .impress-on-about .step:not(.active),
+      [class*="impress-on-section"] .step:not(.active),
+      [class*="impress-on-emphasis"] .step:not(.active) {
+        display: none;
+      }
+
+      /* Hide notes */
+      .step .notes {
+        display: none;
+      }
+
+      .step.list h3 {
+        font-family: "gooddogregular", Georgia, "Times New Roman", "DejaVu Serif", serif;
+        font-size: 63px;
+        font-size: 6.8rem;
+        text-transform: uppercase;
+      }
+
+      .step.meme img {
+        width: 100%;
+        height: auto;
+      }
+
+      .single p {
+        font-size: 6.2rem;
+      }
+
+      a { color: #145ACC;}
+
+    </style>
+</head>
+
+
+<body class="impress-not-supported">
+
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div class="letsmakesomelines"></div>
+
+<div id="impress">
+
+  <div id="title" class="title step" data-x="0" data-y="-200" data-scale="2">
+    <h1>Conquering<br><span class="drama">Impostor</span><br>Syndrome<br> <span class="overview-hidden">in the Open Source Community</span></h2>
+  </div>
+
+  <div id="about" class="about step" data-x="1500" data-y="1000" data-scale="2">
+    <h2>About Us</h2>
+    <ul style="margin-top:1.5em;">
+      <li>
+        Heather Rodriguez<br>
+        <span class="offset small">Engineer at CivicActions</span><br>
+        <a href="http://twitter.com/hrodrig" class="small twitter">@hrodrig</a>
+        </li>
+      <li style="margin-left:3em">Kat Kuhl<br>
+      <span class="offset small">Director of Technology at CHIEF</span><br>
+      <a href="http://twitter.com/webbykat" class="small twitter">@webbykat</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="i-have-no-idea" class="meme step hide" data-x="-1000" data-y="1000" data-scale="1">
+    <img src="images/build/i-have-no-idea-dog.jpg" alt="'I have no idea what I'm doing' dog"/>
+  </div>
+
+  <div id="subsection_who-does-it-affect" class="subsection list step" data-x="-1000" data-y="2000" data-z="1500" data-scale="1">
+    <p style="font-size:1.4em;">People who feel <span class="offset">socially excluded</span> are especially prone to impostor syndrome...</p>
+  </div>
+
+  <div id="subsection_who-does-it-affect-2" class="subsection list step hide" data-x="-1000" data-y="2500" data-z="2000" data-scale="1">
+    <p style="font-size:1.4em;margin-left:4em;">...but it can affect <span class="offset">anyone</span>.</p>
+  </div>
+
+  <div id="why-is-it-a-problem" class="step hide" data-x="-1000" data-y="3500" data-z="100" data-scale="1">
+  <h2>So, why is impostor syndrome a problem?</h2>
+  </div>
+
+  <div id="why-is-it-a-problem-1" class="step hide" data-x="-3500" data-y="3500" data-z="100" data-scale="1">
+  <p style="font-size:1.2em">Your fear of being discovered as an impostor<br />
+    might lead to <span class="offset">higher stress</span> and <span class="offset">burnout</span>.</p>
+  </div>
+
+  <div id="why-is-it-a-problem-2" class="step hide" data-x="-1000" data-y="3500" data-z="100" data-scale="1">
+  <p style="font-size:1.2em">You may <span class="offset">self-select</span> out of great job opportunities<br />(and higher salaries).</p>
+  </div>  
+
+  <div id="why-is-it-a-problem-3" class="step hide" data-x="1000" data-y="3500" data-z="100" data-scale="1">
+  <p style="font-size:1.2em">The community loses <span class="offset">diversity</span>.</p>
+  </div>  
+
+  <div id="its-a-trap" class="meme step hide" data-x="-1000" data-y="4500"  data-z="-1500" data-scale="1">
+    <img src="images/build/its-a-trap-cat.gif" alt="Cat trapped in a box: It's a trap!"/>
+  </div> 
+
+   <div id="section_make-mistakes" class="section step" data-x="-2000" data-y="700" data-rotate-z="-90" data-scale="1">
+    <h2>Give yourself permission to make mistakes.</h2>
+  </div>
+
+  <div id="demystify" class="step hide meme" data-x="-2000" data-y="700" data-rotate-z="-90" data-scale="1">
+    <img src="images/build/kitten-racoon-replace.jpg" alt="Cat using a mask to look like a racoon"/>
+  </div>
+
+  <div id="admit" class="step hide single meme" data-x="-2000" data-y="2500" data-rotate-z="-90" data-scale="1">
+    <p>You learn faster when you <span class="offset">admit</span><br />what you don't know.</p>
+  </div> 
+
+  <div id="risks" class="step hide single" data-x="-2000" data-y="4500" data-rotate-z="-90" data-scale="1">
+    <p>You learn faster when you take <span class="offset">risks</span>.</p>
+  </div>  
+
+  <div id="quote_how-to-make-mistakes" class="quote step hide" data-x="-2000" data-y="6500" data-rotate-z="-90" data-scale="1">
+    <blockquote>
+    If you aren't making mistakes, it means you aren't out there <span class="offset">doing anything</span>.
+    </blockquote>
+    <p class="source"><a href="https://vimeo.com/42372767">Neil Gaiman</a></p>
+  </div>
+   
+  <div id="section_get-active" class="section step" data-x="-1000" data-y="-1000" data-scale="1">
+    <h2>Get active in the community.</h2>
+  </div>
+
+  <div id="support-network" class="subheader step hide" data-x="-3000" data-y="-1000" data-scale="1">
+    <h2>Find (or build)<br />
+      your support network.</h2>
+  </div>
+
+  <div id="support-network-2" class="subheader step hide" data-x="-1000" data-y="-1000" data-rotate-x="0" data-scale="1">
+    <p style="font-size:1.2em">This gives you a better understanding of your own skills!</p>
+  </div>
+
+  <div id="be-a-mentor" class="subheader step" data-x="-1700" data-y="0" data-scale="1">
+    <h2>Be a mentor.</h2>
+  </div>
+
+  <div id="subsection_what-do-mentors-do" class="subsection list step hide" data-x="-1700" data-y="0" data-rotate-x="90" data-scale="1">
+    <h3>What do mentors do?</h3>
+  <ul>
+    <li>Offer their time.</li>
+    <li>Review code/development with individuals one-on-one.</li>
+    <li>Listen to presentations and give feedback.</li>
+    <li>Give career advice and consultation.</li>
+  </ul>
+  </div>
+
+  <div id="subsection_mentoring" class="subsection step hide meme" data-x="-1700" data-y="0" data-scale="1">
+    <img src="images/mentor-cat.jpg" alt="Please oh please let me be a mentor"/>
+  </div>
+
+
+  <!-- Speak! (Heather) -->
+  <div id="speak" class="subheader step" data-x="-1800" data-y="-600" data-scale="1">
+    <h2>Speak.</h2>
+  </div>
+
+  <div id="speak-1" class="subheader step hide" data-x="-1800" data-y="-600" data-rotate-y="-90" data-scale="1">
+    <p style="font-size:1.2em"><strong>Remember:</strong> You (yes, you) can do this.</p>
+  </div>
+
+  <div id="speak-2" class="subheader step hide" data-x="-1800" data-y="-1600" data-rotate-y="-90" data-scale="1">
+    <p style="font-size:1.2em">Find your own spin on the topic.</p>
+  </div>
+
+  <div id="speak-3" class="subheader step hide" data-x="-1800" data-y="-2600" data-rotate-y="-90" data-scale="1">
+    <p style="font-size:1.2em">Remind yourself that feedback will<br />
+      make your first presentation <span class="offset">stronger</span>.</p>
+  </div>
+
+  <div id="section_ownit" class="section step" data-x="2000" data-y="-1100" data-scale="1">
+    <h2>Own your career.</h2>
+  </div>
+
+    <div id="decide-what-you-want" class="subheader step" data-x="1000" data-y="-200" data-scale="1" data-rotate-z="90" data-z="0">
+    <h2 style="font-size:2em">Decide what you want;<br />
+    then do your research.</h2>
+  </div>
+
+  <div id="move-up" class="step" data-x="1000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1">
+    <h4>If you want to move up at your current job...</h4>
+  </div>
+
+  <div id="subsection_communicate" class="single step hide" data-x="3000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1">
+    <p>Tell your boss what skills you want to grow.</p>
+  </div>
+
+  <div id="subsection_know" class="subsection list step single" data-x="5000" data-y="-3500" data-rotate-x="90" data-z="400" data-scale="1">
+    <p>Learn the responsibilities (& job description)<br />of the role you want.</p>
+  </div>
+
+  <div id="takecredit" class="single step hide" data-x="7000" data-y="0" data-rotate-x="90" data-z="400" data-scale="1">
+    <p>Keep a record of your accomplishments<br />
+      <span class="offset">(& take credit for them)</span>.</p>
+  </div>
+
+  <div id="subsection_dont-say" class="subsection list step hide" data-x="7000" data-y="-0" data-scale="1" data-rotate-z="90">
+    <h3>Don’t say:</h3>
+    <ul>
+      <li>"I just Googled it."</li>
+      <li>"It's no big deal."</li>
+      <li>"She did most of the work."</li>
+    </ul>
+  </div>
+
+  <div id="subsection_say-instead" class="subsection list step hide" data-x="7000" data-y="0" data-rotate-x="-90" data-scale="1" data-rotate-z="90" data-z="200">
+
+    <h3>Say instead:</h3>
+    <ul>
+      <li>Thank you!</li>
+    </ul>
+
+  </div>
+
+  <div id="another-job" class="step" data-x="1500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1" >
+    <h4>If you want a new job...</h4>
+  </div>
+
+  <div id="network" class="step subsection" data-x="3500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1">
+    <h2 style="font-size:1.5em">Tap your network.</h2>
+  </div>
+
+  <div id="apply" class="step subsection" data-x="5500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1">
+    <h2 style="font-size:1.5em">Don't hesitate to apply<br />for what you want.</h2>
+  </div>
+
+  <div id="subsection_qualifications" class="subsection list step hide" data-x="7500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1">
+    <h3>Hewlett Packard report:</h3>
+    <ul>
+      <li>Women wouldn't apply for a job unless they felt they meet 100% of the qualifications.</li>
+      <li>Men applied if they felt  they meet as little as 60% of them.</li>
+    </ul>    
+  </div>
+
+  <div id="obligations" class="subsection step" data-x="9500" data-y="2500" data-rotate-x="90" data-z="400" data-scale="1" >
+    <h2 style="font-size:1.5em;">Don't spend your time explaining<br />what you <span class="offset">don't</span> know in an interview.</h2>
+    <p>(Other people aren't.)</p>
+  </div>
+
+  <div id="demonstrate" class="subsection step list" data-x="11500" data-y="9500" data-rotate-x="90" data-z="400" data-rotate-z"50" data-scale="1" >
+    <h4>Know why you're a great hire.<br />Then tell that story at your interview.</h4>
+  </div>
+
+  <div id="overview" class="step" data-x="0" data-y="0" data-scale="3">
+
+  </div>
+
+</div>
+
+
+<div class="hint">
+  <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+
+<script src="js/impress.js"></script>
+<script src="js/impressConsole.js"></script>
+<script>
+  impress().init();
+  console().init();
+</script>
+
+
+</body>
+</html>
+

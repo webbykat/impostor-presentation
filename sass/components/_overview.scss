@@ -1,5 +1,18 @@
 [class*="impress-on-overview"] {
-	.step * {
-		color: $black
+	.step.title * {
+		color: $black;
+
+    .drama {
+      color: $red;
+    }
 	}
+
+  .step.section {
+    color: $red;
+  }
+
+  .overview-hidden {
+    display: none;
+  }
+
 }
